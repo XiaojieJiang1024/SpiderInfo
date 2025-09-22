@@ -1,0 +1,1080 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>采购公告搜索_中国政府采购网</title>
+    <link href="/static/css/style4.css" rel="stylesheet" type="text/css"/>
+
+    <link href="/static/css/data4.css" rel="stylesheet" type="text/css"/>
+    <script>
+        var path = "/";
+        var basePath = "//search.ccgp.gov.cn/";
+        var staticPath = path + "static/";
+        var dateTy = '2';
+        var bidType = '';
+        var bidSort = '';
+        var pinMu = '';
+        var searchtype = '1';
+        var kw = '河南';
+        var buyerName = '';
+        var projectId = '';
+        var zoneId = '';
+        var displayZone = '';
+        var agentName = '';
+        var pppStatus = '0';
+        var start_time = '2025:06:02';
+        var end_time = '2025:06:09';
+        var page_index = 1;
+
+
+    </script>
+
+    <script type="text/javascript" src="/static/js/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="/static/js/data4.js"></script>
+    <script type="text/javascript" src="/static/js/page.js"></script>
+    <script type="text/javascript" src="/static/js/laydate/laydate.js"></script>
+</head>
+<body style="background:#fff">
+
+<link href="//www.ccgp.gov.cn/css/inc.css" rel="stylesheet" type="text/css"/>
+<div class="v4incheadertop">
+    <div class="v4incheadertop_tel_block">
+        <div class="v4incheadertop_tel">
+            <p class="cl">财政部唯一指定政府采购信息网络发布媒体 国家级政府采购专业网站</p>
+            <p class="cr">服务热线：400-810-1996</p>
+        </div>
+    </div>
+    <div class="v4incheadertop_logosearch_block2">
+        <div class="v4incheadertop_logosearch">
+            <div class="searcharea1">
+                <div class="logo_gh" style="margin-top:20px">
+                    <a href="#" class="ccgp"></a>
+                    <a href="#" class="ccgp2"></a>
+                    <a href="#" class="gmfw"></a>
+                    <a href="#" class="ccgp3"></a>
+                </div>
+            </div>
+
+            <div class="searcharea2">
+                <div class="sangong_bl"></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="v4incheadertop_nav_block">
+        <div class="v4incheadertop_nav">
+            <ul class="v4incheadertop_nav_ls">
+                <li id="ch_index" style="width:140px"><a href="//www.ccgp.gov.cn/">首页</a></li>
+                <li id="ch_zcfg" style="width: 172px"><a href="//www.ccgp.gov.cn/zcfg/">政采法规</a></li>
+                <li id="ch_gmfw" style="width:172px"><a href="//www.ccgp.gov.cn/gpsr/">购买服务</a></li>
+                <li id="ch_jdjc" style="width:172px"><a href="//www.ccgp.gov.cn/jdjc/">监督检查</a></li>
+                <li id="ch_xxgg" style="width:172px"><a href="//www.ccgp.gov.cn/xxgg/">信息公告</a></li>
+                <li id="ch_gpa" style="width:172px"><a href="//www.ccgp.gov.cn/wtogpa/">国际专栏</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clb"></div>
+</div>
+
+<div class="vT_z">
+    <div style="width:100%;background:#ccc">
+        <ul class="vT_search_sortby">
+            <li>
+                <a href="//search.ccgp.gov.cn/znzxsearch?searchtype=1&page_index=1&searchchannel=0&kw=河南&timeType=0">站内资讯</a>
+            </li>
+            <li class="current2">采购公告</li>
+            <li><a href="//search.ccgp.gov.cn/zcfgsearch">政策法规</a></li>
+        </ul>
+    </div>
+</div>
+<span class="blank37"></span>
+
+<div class="vT_z">
+    <div class="vT-srch-result-top">
+        <div class="vT-srch-result-top-logo n_fl"><img
+                src="/static/images/searchplatform_bid.gif"
+                style="border:0"></div>
+        <div class="vT-srch-result-top-form n_fr">
+            <form name="searchForm" id="searchForm" action="//search.ccgp.gov.cn/bxsearch" method="get">
+                <input type="hidden" name="searchtype" id="searchtype" value="1">
+                <input type="hidden" name="page_index" id="page_index" value="1">
+                <input type="hidden" name="bidSort" id="bidSort" value="">
+                <input type="hidden" name="buyerName" id="buyerName" value="">
+                <input type="hidden" name="projectId" id="projectId" value="">
+                <input type="hidden" name="pinMu" id="pinMu" value="">
+                <input type="hidden" name="bidType" id="bidType" value="">
+                <input type="hidden" name="dbselect" value="bidx">
+                <input name="kw" id="kw" type="text" style="float:left;width:260px" value="河南"/>
+                <input type="hidden" name="start_time" id="start_time" value="2025:06:02">
+                <input type="hidden" name="end_time" id="end_time" value="2025:06:09">
+                <input type="hidden" name="timeType" id="timeType" value="2">
+                <input type="hidden" name="displayZone" id="displayZone" value="">
+                <input type="hidden" name="zoneId" id="zoneId" value="">
+                <input type="hidden" name="pppStatus" id="pppStatus" value="0">
+                <input type="hidden" name="agentName" id="agentName" value="">
+                <input type="button" value="搜标题" id="doSearch1" onclick="validateCode(1)"
+                       style="font-size:14px;font-weight:bolder;width:70px;cursor:pointer;background:#cc0000;color:#fff;float:left;height:34px"
+                       class="main"/>
+                <input type="button" value="搜全文" id="doSearch2" onclick="validateCode(2)"
+                       style="font-size:14px;font-weight:bolder;width:70px;cursor:pointer;background:#0082d4;color:#fff;float:left;height:34px"
+                       class="main"/>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+<!---->
+<span class="blank10"></span>
+
+<div class="vT_z" id="vT_bidSearch_o">
+    <div class="vT_bidSearch_outsider">
+        <!--选择内容-->
+        <div class="vT_bidSearch_addon_con" style="margin-top:20px">
+            <div class="vT_bidSearch_addon_block2" style="margin-left:0;float:left;"><p
+                    style="vertical-align:top;margin-top:0;padding-top:0">类型</p></div>
+            <div style="float:left;width:870px;height:60px">
+                <ul class="vT-srch-result-channel-list2" id="searchbidTypeSel">
+                    <li onclick="bidTypeSel(0)">所有类型</li>
+                    <li onclick="bidTypeSel(1)">公开招标</li>
+                    <li onclick="bidTypeSel(2)">询价公告</li>
+                    <li onclick="bidTypeSel(3)">竞争性谈判</li>
+                    <li onclick="bidTypeSel(4)">单一来源</li>
+                    <li onclick="bidTypeSel(5)">资格预审</li>
+                    <li onclick="bidTypeSel(6)">邀请公告</li>
+                    <li onclick="bidTypeSel(7)">中标公告</li>
+                    <li onclick="bidTypeSel(8)">更正公告</li>
+                    <li onclick="bidTypeSel(9)">其他公告</li>
+                    <li onclick="bidTypeSel(10)">竞争性磋商</li>
+                    <li onclick="bidTypeSel(11)">成交公告</li>
+                    <li onclick="bidTypeSel(12)">终止公告</li>
+                    <li onclick="isPPP()"><img src="/static/images/ppp_off.gif" title="ppp项目" id="disPPP"></li>
+                </ul>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <!--选择内容-->
+        <div class="vT_bidSearch_addon_con">
+            <div class="vT_bidSearch_addon_block2" style="margin-left:0;float:left;"><p
+                    style="vertical-align:top;margin-top:0;padding-top:15px">类别</p></div>
+            <div style="float:left;width:870px;height:30px;margin-top:15px">
+                <ul class="vT-srch-result-channel-list3" id="searchBidSortSel">
+                    <li onclick="bidSortSel(0)">所有类别</li>
+                    <li onclick="bidSortSel(1)">中央公告</li>
+                    <li onclick="bidSortSel(2)">地方公告</li>
+                </ul>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <!--选择内容-->
+        <div class="vT_bidSearch_addon_con">
+            <div class="vT_bidSearch_addon_block2" style="margin-left:0;float:left;"><p
+                    style="vertical-align:top;margin-top:0;padding-top:15px">品目</p></div>
+            <div style="float:left;width:870px;height:30px;margin-top:15px">
+                <ul class="vT-srch-result-channel-list3" id="searchPinMuSel">
+                    <li onclick="pinMuSel(0)">所有品目</li>
+                    <li onclick="pinMuSel(1)">货物类</li>
+                    <li onclick="pinMuSel(2)">工程类</li>
+                    <li onclick="pinMuSel(3)">服务类</li>
+                </ul>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <!--选择内容-->
+        <div class="vT_bidSearch_addon_con">
+            <div class="vT_bidSearch_addon_block2" style="margin-left:0;float:left;"><p
+                    style="vertical-align:top;margin-top:0;padding-top:15px">时间</p></div>
+            <div style="float:left;width:870px;height:30px;margin-top:15px;position:relative">
+                <ul class="vT-srch-result-channel-list3" id="datesel">
+                    <li onclick="timeSel(0)">今日</li>
+                    <li onclick="timeSel(1)">近3日</li>
+                    <li onclick="timeSel(2)">近1周</li>
+                    <li onclick="timeSel(3)">近1月</li>
+                    <li onclick="timeSel(4)">近3月</li>
+                    <li onclick="timeSel(5)">近半年</li>
+                    <li id="cusTime">指定时间</li>
+                </ul>
+                <div class="cusTime_container">
+                    <span>指定时间</span>
+                    <input type="text" name="inpCusStartTime" id="inpCusStartTime" readonly="readonly"
+                           value="2025-06-02">
+                    <input type="text" name="inpCusEndTime" id="inpCusEndTime" readonly="readonly"
+                           value="2025-06-09">
+                    <em class="dose" title="查询">查询</em>
+                    <em class="clos" title="取消">取消</em>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <!--输入内容-->
+        <div class="vT_bidSearch_addon_con">
+            <div class="vT_bidSearch_addon_block" style="margin-left:0">
+                <p>采购人</p>
+                <input value="" type="text" name="inpBuyerName" id="inpBuyerName">
+            </div>
+            <div class="vT_bidSearch_addon_block">
+                <p>项目编号</p>
+                <input value="" type="text" name="inpProjectId" id="inpProjectId">
+            </div>
+
+            <div class="vT_bidSearch_addon_block" id="zonearea">
+                <p>地区</p>
+                <input value="" type="text" name="inpDisplayZone" id="inpDisplayZone"
+                       readonly="readonly">
+                <input type="hidden" name="inpZoneId" id="inpZoneId">
+
+                <div class="zone_list_container">
+                    <ul class="zone_list" zoneId="">
+                        <li>全部</li>
+                        <li zoneId="11">北京</li>
+                        <li zoneId="12">天津</li>
+                        <li zoneId="13">河北</li>
+
+                        <li zoneId="14">山西</li>
+                        <li zoneId="15">内蒙古</li>
+                        <li zoneId="21 not 2102">辽宁</li>
+                        <li zoneId="2102">大连</li>
+                        <li zoneId="22">吉林</li>
+                        <li zoneId="23">黑龙江</li>
+                        <li zoneId="31">上海</li>
+                        <li zoneId="32">江苏</li>
+
+                        <li zoneId="33 not 3302">浙江</li>
+                        <li zoneId="3302">宁波</li>
+                        <li zoneId="34">安徽</li>
+                        <li zoneId="35 not 3502">福建</li>
+                        <li zoneId="3502">厦门</li>
+                        <li zoneId="36">江西</li>
+
+                        <li zoneId="37 not 3702">山东</li>
+                        <li zoneId="3702">青岛</li>
+                        <li zoneId="41">河南</li>
+                        <li zoneId="42">湖北</li>
+                        <li zoneId="43">湖南</li>
+                        <li zoneId="44 not 4403">广东</li>
+
+                        <li zoneId="4403">深圳</li>
+                        <li zoneId="45">广西</li>
+                        <li zoneId="46">海南</li>
+                        <li zoneId="50">重庆</li>
+                        <li zoneId="51">四川</li>
+                        <li zoneId="52">贵州</li>
+
+                        <li zoneId="53">云南</li>
+                        <li zoneId="54">西藏</li>
+                        <li zoneId="61">陕西</li>
+                        <li zoneId="62">甘肃</li>
+                        <li zoneId="63">青海</li>
+                        <li zoneId="64">宁夏</li>
+
+                        <li zoneId="65">新疆</li>
+                        <li zoneid="66" style="width:121px">新疆生产建设兵团</li>
+                        <li zoneId="71">台湾</li>
+                        <li zoneId="81">香港</li>
+                        <li zoneId="82">澳门</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="vT_bidSearch_addon_block" style="margin-left:0">
+                <p>代理机构</p>
+                <input type="text" name="inpAgentName" id="inpAgentName" value="">
+            </div>
+            <div class="vT_bidSearch_addon_block">
+                <div style="position:relative">
+                    <!--
+                    <div class="code" id="checkCode" style="float:left">
+                        <img onclick="javascript:loadimage();" title="换一张试试" name="randImage" id="randImage"
+                             src="//search.ccgp.gov.cn/ValidateImage">
+                    </div>
+                    <input style="float:left;" type="text" id="inpid" name="inpid" style="border:2px solid #ac0000"/>
+
+                    <div style="position:absolute;width:260px;height:24px;margin-left:205px;margin-top:8px;">请输入左侧验证码
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+</div>
+<span class="blank20"></span>
+<!---->
+<div class="vT_z">
+    <div style="width:100%;height:30px">
+
+
+        <!-- something-->
+        <div style="font-size:14px">
+            <p style="float:left">关键字：
+                <span style="color:#c00000;font-weight:bolder">河南</span>
+
+                标题检索
+
+
+                共找到
+                <span style="color:#c00000">67</span>
+                条内容 查询日期从
+                <span style="color:#c00000">2025-06-02</span>
+                到
+                <span style="color:#c00000">2025-06-09</span>
+            </p>
+
+
+            <p class="pager">
+                <script language="javascript">Pager({
+                    size: 4,
+                    current: 0,
+                    prefix: 'data2',
+                    suffix: '.jsp&'
+                });</script>
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!---->
+    <span class="blank10"></span>
+
+    <div class="vT_z" style="position:relative">
+        <div class="vT-srch-result">
+            <div class="vT-srch-result-list-con2">
+                <div class="vT-srch-result-list">
+                    <ul class="vT-srch-result-list-bid">
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                <font color=red>河南</font>省档案馆中福公司英文档案整理与开发项目流标公告
+                            </a>
+
+                            <p>
+                                一、项目基本情况采购项目编号：ZYZB-2025-0229采购项目名称：河南省档案馆中福公司英文档案整理与开发项目二、项目废标/流标的原因获取招标文件的投标人不足三家，本项目流标。三、其他补充事宜无四、凡对本次公告内</p>
+                            <span>2025.06.09 10:22:12
+                                        | 采购人：国家档案局
+                                        | 代理机构：中钰招标有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                其他公告
+
+                                        </strong>
+                                        | 北京
+                                        | <strong style="font-weight:bolder"> 服务/商务服务/翻译服务</strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                杭锦旗城市公用事业服务中心杭锦旗锡尼镇荣乌连接线、呼和木独街、滨<font
+                                    color=red>河南</font>路（109国道南），蒙医院及南出入口绿化养护与环境卫生清扫保洁服务项目中标（成交）结果公告
+                            </a>
+
+                            <p>
+                                一、项目编号：ESZCHJS-C-F-250040二、项目名称：杭锦旗锡尼镇荣乌连接线、呼和木独街、滨河南路（109国道南），蒙医院及南出入口绿化养护与环境卫生清扫保洁服务项目三、采购结果合同包1(杭锦旗锡尼镇荣乌连接线、呼</p>
+                            <span>2025.06.09 10:05:38
+                                        | 采购人：杭锦旗城市公用事业服务中心
+                                        | 代理机构：鄂尔多斯市蓉升项目管理有限责任公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                成交公告
+
+                                        </strong>
+                                        | 内蒙古
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                关于<font color=red>河南</font>县2所派出所基础设施配套建设项目中标(成交)结果公告
+                            </a>
+
+                            <p>
+                                一、项目编号：青海启盛竞磋（工程）2025-011二、项目名称：河南县2所派出所基础设施配套建设项目三、中标（成交）信息1.中标结果：序号中标（成交）金额(元)中标供应商名称中标供应商地址1报价：1501987.77（元）黄</p>
+                            <span>2025.06.07 18:22:41
+                                        | 采购人：河南蒙古族自治县公安局
+                                        | 代理机构：青海启盛项目管理有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                中标公告
+
+                                        </strong>
+                                        | 青海
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                青海宇润工程项目管理有限公司关于2024年<font color=red>河南</font>县第三次全国土壤普查成果汇总项目中标(成交)结果公告
+                            </a>
+
+                            <p>
+                                一、项目编号：青海宇润竞磋（服务）2025-004二、项目名称：2024年河南县第三次全国土壤普查成果汇总项目三、中标（成交）信息1.中标结果：序号中标（成交）金额(元)中标供应商名称中标供应商地址1报价：699400（元）</p>
+                            <span>2025.06.07 17:05:51
+                                        | 采购人：河南蒙古族自治县农牧水利综合服务中心
+                                        | 代理机构：青海宇润工程项目管理有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                中标公告
+
+                                        </strong>
+                                        | 青海
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                <font color=red>河南</font>省豫南监狱标准化监舍楼二楼三楼改造项目-竞争性磋商公告
+                            </a>
+
+                            <p>
+                                公告内容文档中小微企业融资申请项目概况河南省豫南监狱标准化监舍楼二楼三楼改造项目招标项目的潜在投标人应在河南省公共资源交易中心网站下载。获取招标文件，并于2025年06月17日09时00分（北京时间）前递交响应文</p>
+                            <span>2025.06.06 16:32:51
+                                        | 采购人：河南省豫南监狱
+                                        | 代理机构：青矩工程顾问有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                竞争性磋商公告
+
+                                        </strong>
+                                        | 河南
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                <font color=red>河南</font>省体育彩票管理中心采购1500套终端机彩票销售软件集成服务的项目独家来源采购公示
+                            </a>
+
+                            <p>
+                                公告内容文档一、项目信息1.项目名称：河南省体育彩票管理中心采购1500套终端机彩票销售软件集成服务的项目2.拟采购的货物或服务的说明对1500台终端机进行彩票销售软件更换安装，并提供终端机系统集成服务及后续服务</p>
+                            <span>2025.06.06 16:29:55
+                                        | 采购人：河南省体育彩票管理中心
+                                        | 代理机构：河南华豫正大工程咨询有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                单一来源公告和公示
+
+                                        </strong>
+                                        | 河南
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                延津县魏邱乡人民政府2025年度<font color=red>河南</font>省农村公益事业财政奖补普惠性项目-成交公告
+                            </a>
+
+                            <p>
+                                公告内容文档中小微企业融资申请一、项目基本情况1、采购项目编号：延津磋商采购-2025-262、采购项目名称：延津县魏邱乡人民政府2025年度河南省农村公益事业财政奖补普惠性项目3、采购方式：竞争性磋商4、采购公告发</p>
+                            <span>2025.06.06 13:30:17
+                                        | 采购人：延津县魏邱乡人民政府
+                                        | 代理机构：河南昱仁项目管理有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                成交公告
+
+                                        </strong>
+                                        | 河南
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                <font color=red>河南</font>省市场监督管理局2025年度工业产品质量监督抽查任务购买社会服务项目（包1-包10）-公开招标公告
+                            </a>
+
+                            <p>
+                                公告内容文档中小微企业融资申请项目概况河南省市场监督管理局2025年度工业产品质量监督抽查任务购买社会服务项目招标项目的潜在投标人应在“河南省公共资源交易中心（hnsggzyjy.henan.gov.cn）”网站获取招标文件，</p>
+                            <span>2025.06.06 13:13:02
+                                        | 采购人：河南省市场监督管理局
+                                        | 代理机构：中金泰富工程管理有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                公开招标公告
+
+                                        </strong>
+                                        | 河南
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                新建路（北沙<font color=red>河南</font>沿岸-迎泽大街）地下管网更新改造工程苗木移植工程结果公告
+                            </a>
+
+                            <p>
+                                一、项目编号：1401992025BCS00264二、项目名称：新建路（北沙河南沿岸-迎泽大街）地下管网更新改造工程苗木移植工程三、中标（成交）信息1.中标结果：序号供应商名称供应商地址中标（成交）金额评审总得分1太原市美</p>
+                            <span>2025.06.06 11:32:26
+                                        | 采购人：太原市园林绿化建设服务中心
+                                        | 代理机构：中咨城发建设项目管理咨询有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                中标公告
+
+                                        </strong>
+                                        | 山西
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                <font color=red>河南</font>省退役军人事务厅2025年双拥工作物资采购项目-公开招标公告
+                            </a>
+
+                            <p>
+                                公告内容文档中小微企业融资申请项目概况河南省退役军人事务厅2025年双拥工作物资采购项目招标项目的潜在投标人应在河南省公共资源交易中心网站下载获取招标文件，并于2025年06月30日09时00分（北京时间）前递交投标</p>
+                            <span>2025.06.06 11:16:14
+                                        | 采购人：河南省退役军人事务厅
+                                        | 代理机构：恒信咨询管理有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                公开招标公告
+
+                                        </strong>
+                                        | 河南
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                <font color=red>河南</font>大学《圣经文学研究》 第31辑出版费用项目单一来源采购公示
+                            </a>
+
+                            <p>
+                                公告内容文档一、项目信息1.项目名称：河南大学《圣经文学研究》第31辑出版费用项目2.拟采购的货物或服务的说明《圣经文学研究》第31辑出版费用3.拟采购的货物或服务的预算金额：81400元4.单一来源原因及相关说明1.本</p>
+                            <span>2025.06.06 10:58:58
+                                        | 采购人：河南大学
+                                        | 代理机构：河南正大招标服务有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                单一来源公告和公示
+
+                                        </strong>
+                                        | 河南
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                <font color=red>河南</font>大学教务管理系统功能升级改造项目单一来源采购公示
+                            </a>
+
+                            <p>
+                                公告内容文档一、项目信息1.项目名称：河南大学教务管理系统功能升级改造项目2.拟采购的货物或服务的说明教务管理系统功能升级改造3.拟采购的货物或服务的预算金额：400000元4.单一来源原因及相关说明该项目属于现有</p>
+                            <span>2025.06.06 10:58:16
+                                        | 采购人：河南大学
+                                        | 代理机构：河南正大招标服务有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                单一来源公告和公示
+
+                                        </strong>
+                                        | 河南
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                <font color=red>河南</font>省机关事务管理局新能源轿车采购项目-成交公告
+                            </a>
+
+                            <p>
+                                公告内容文档中小微企业融资申请一、项目基本情况1、采购项目编号：豫财询价采购-2025-22、采购项目名称：河南省机关事务管理局新能源轿车采购项目3、采购方式：询价4、采购公告发布日期：2025年05月29日5、评审日期</p>
+                            <span>2025.06.06 10:12:56
+                                        | 采购人：河南省机关事务管理局
+                                        | 代理机构：河南省公共资源交易中心
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                成交公告
+
+                                        </strong>
+                                        | 河南
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                <font color=red>河南</font>省驻马店监狱罪犯个人日用品采购项目-中标公告
+                            </a>
+
+                            <p>
+                                公告内容文档中小微企业融资申请一、项目基本情况1、采购项目编号：豫财招标采购-2025-2802、采购项目名称：河南省驻马店监狱罪犯个人日用品采购项目3、采购方式：公开招标4、招标公告发布日期：2025年06月06日5、评</p>
+                            <span>2025.06.06 09:27:43
+                                        | 采购人：河南省驻马店监狱
+                                        | 代理机构：至诚工程咨询有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                中标公告
+
+                                        </strong>
+                                        | 河南
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                <font color=red>河南</font>省平原监狱2025年罪犯食堂大宗生活物资和罪犯日用品供应站物资采购项目-中标公告
+                            </a>
+
+                            <p>
+                                公告内容文档中小微企业融资申请一、项目基本情况1、采购项目编号：豫财招标采购-2025-3562、采购项目名称：河南省平原监狱2025年罪犯食堂大宗生活物资和罪犯日用品供应站物资采购项目3、采购方式：公开招标4、招标公</p>
+                            <span>2025.06.05 18:22:34
+                                        | 采购人：河南省平原监狱
+                                        | 代理机构：中兴豫建设管理有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                中标公告
+
+                                        </strong>
+                                        | 河南
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                <font color=red>河南</font>省健康中原服务保障中心投放高铁城际动车组公益广告项目单一来源采购公示
+                            </a>
+
+                            <p>
+                                公告内容文档一、项目信息1.项目名称：河南省健康中原服务保障中心投放高铁城际动车组公益广告项目2.拟采购的货物或服务的说明采取整列车包车的合作形式，利用列车内座椅头枕巾、小桌板贴、车内电子屏、车厢海报、车</p>
+                            <span>2025.06.05 17:40:25
+                                        | 采购人：河南省健康中原服务保障中心
+                                        | 代理机构：河南招标采购服务有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                单一来源公告和公示
+
+                                        </strong>
+                                        | 河南
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                <font color=red>河南</font>省健康中原服务保障中心在<font color=red>河南</font>卫视开展《大象健康》项目单一来源采购公示
+                            </a>
+
+                            <p>
+                                公告内容文档一、项目信息1.项目名称：河南省健康中原服务保障中心河南卫视医疗健康科普栏目《大象健康》项目2.拟采购的货物或服务的说明《大象健康》节目旨在报道医疗卫生行业最新动态、医疗科技创新最新成果、疾病</p>
+                            <span>2025.06.05 17:40:22
+                                        | 采购人：河南省健康中原服务保障中心
+                                        | 代理机构：河南招标采购服务有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                单一来源公告和公示
+
+                                        </strong>
+                                        | 河南
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                <font color=red>河南</font>省健康中原服务保障中心在郑州地铁1号线开展“健康<font
+                                    color=red>河南</font>”号专列公益广告项目单一来源采购公示
+                            </a>
+
+                            <p>
+                                公告内容文档一、项目信息1.项目名称：河南省健康中原服务保障中心在郑州地铁1号线开展“健康河南”号专列公益广告项目单一来源采购公示2.拟采购的货物或服务的说明利用地铁日均百万级客流量实现健康知识的精准触达，</p>
+                            <span>2025.06.05 17:40:19
+                                        | 采购人：河南省健康中原服务保障中心
+                                        | 代理机构：河南招标采购服务有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                单一来源公告和公示
+
+                                        </strong>
+                                        | 河南
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                <font color=red>河南</font>省健康中原服务保障中心在<font color=red>河南</font>广播电视台播出《健康中原》电视栏目项目单一来源采购公示
+                            </a>
+
+                            <p>
+                                公告内容文档一、项目信息1.项目名称：河南省健康中原服务保障中心在河南广播电视台播出《健康中原》电视栏目项目2.拟采购的货物或服务的说明河南广播电视台负责策划、创意、拍摄、编辑、制作、播出《健康中原》电视</p>
+                            <span>2025.06.05 17:40:15
+                                        | 采购人：河南省健康中原服务保障中心
+                                        | 代理机构：河南招标采购服务有限公司
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                单一来源公告和公示
+
+                                        </strong>
+                                        | 河南
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:void(0)" style="line-height:18px">
+                                三门峡市交通运输局<font color=red>河南</font>省三门峡市公共交通公司更新68台老旧公交车项目-公开招标公告
+                            </a>
+
+                            <p>
+                                公告内容文档中小微企业融资申请项目概况河南省三门峡市公共交通公司更新68台老旧公交车项目招标项目的潜在投标人应在三门峡市政府采购服务中心网：（http://120.194.249.37/smxcgzx_web/views/announce/home.html）</p>
+                            <span>2025.06.05 17:14:08
+                                        | 采购人：三门峡市交通运输局
+                                        | 代理机构：三门峡市政府采购服务中心
+                                        <br/>
+                                        <strong style="font-weight:bolder">
+
+
+                                                公开招标公告
+
+                                        </strong>
+                                        | 河南
+                                        | <strong style="font-weight:bolder"> </strong>
+
+                                    </span>
+                        </li>
+
+
+                    </ul>
+
+                    <p class="pager">
+                        <script language="javascript">Pager({
+                            size: 4,
+                            current: 0,
+                            prefix: 'data2',
+                            suffix: '.jsp&'
+                        });</script>
+                    </p>
+
+                </div>
+                <div class="vT-srch-result-page-con"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var ohtmlurls = "http://www.ccgp.gov.cn/cggg/zygg/qtgg/202506/t20250609_24738532.htm,http://www.ccgp.gov.cn/cggg/dfgg/cjgg/202506/t20250609_24738227.htm,http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202506/t20250607_24737050.htm,http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202506/t20250607_24736790.htm,http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202506/t20250606_24731604.htm,http://www.ccgp.gov.cn/cggg/dfgg/dylygg/202506/t20250606_24731472.htm,http://www.ccgp.gov.cn/cggg/dfgg/cjgg/202506/t20250606_24728649.htm,http://www.ccgp.gov.cn/cggg/dfgg/gkzb/202506/t20250606_24728586.htm,http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202506/t20250606_24727968.htm,http://www.ccgp.gov.cn/cggg/dfgg/gkzb/202506/t20250606_24727758.htm,http://www.ccgp.gov.cn/cggg/dfgg/dylygg/202506/t20250606_24727445.htm,http://www.ccgp.gov.cn/cggg/dfgg/dylygg/202506/t20250606_24727452.htm,http://www.ccgp.gov.cn/cggg/dfgg/cjgg/202506/t20250606_24726997.htm,http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202506/t20250606_24726614.htm,http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202506/t20250605_24725003.htm,http://www.ccgp.gov.cn/cggg/dfgg/dylygg/202506/t20250605_24724180.htm,http://www.ccgp.gov.cn/cggg/dfgg/dylygg/202506/t20250605_24724179.htm,http://www.ccgp.gov.cn/cggg/dfgg/dylygg/202506/t20250605_24724178.htm,http://www.ccgp.gov.cn/cggg/dfgg/dylygg/202506/t20250605_24724168.htm,http://www.ccgp.gov.cn/cggg/dfgg/gkzb/202506/t20250605_24723605.htm,";
+
+    </script>
+
+
+    <span class="blank37"></span>
+
+    <div class="vT_nav_cp">
+        <div class="vT_z">
+            <style type="text/css">
+                .copyright_bl {
+                    width: 960px;
+                    margin: 0 auto
+                }
+
+                /*margin-top:20px;*/
+                .vF_cp {
+                    width: 960px;
+                    margin: 0 auto;
+                    text-align: left;
+                    float: left;
+                    background: #e9e9e9;
+                    color: #333;
+                    height: 120px;
+                    padding-top: 10px;
+                }
+
+                .vF_cp p {
+                    width: 600px;
+                    float: left;
+                    margin-top: 15px;
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+
+                .vF_cp span {
+                    font-family: Verdana, Geneva, sans-serif;
+                    font-size: 12px
+                }
+
+                .vF_cp a, .vT_cp a {
+                    color: #333;
+                    text-decoration: none
+                }
+
+                .vF_cp a:hover, .vT_cp a:hover {
+                    text-decoration: underline;
+                    color: #ba2636
+                }
+
+                .dzjg {
+                    width: 205px;
+                    height: 80px;
+                    float: left;
+                    margin: 14px 10px 0 130px;
+                    border-right: 1px solid #c2c2c2;
+                }
+
+                .cpright {
+                    float: left;
+                    width: 570px;
+                    margin-left: 15px;
+                }
+
+                .ccgpjiucuo {
+                    width: 110px;
+                    height: 55px;
+                    float: left;
+                    margin-left: 5px;
+                    margin-top: 10px
+                }
+            </style>
+            <div class="copyright_bl">
+                <div class="vF_cp">
+                    <div class="dzjg">
+                        <div class="ccgpjiucuo">
+                            <a href="https://zfwzgl.www.gov.cn/exposure/jiucuo.html?site_code=bm14000002&amp;url=http%3A%2F%2Fwww.ccgp.gov.cn%2F"
+                               target="_blank"><img src="//www.ccgp.gov.cn/img/jiucuo.png"></a>
+                        </div>
+                        <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='https://dcs.conac.cn/js/33/000/0000/60425889/CA330000000604258890010.js' type='text/javascript'%3E%3C/script%3E"));</script>
+                    </div>
+                    <div class="cpright">
+                        <p>
+                            主办单位：中华人民共和国财政部国库司 <br>网站标识码：<span>bm14000002</span> &nbsp;|&nbsp; <a
+                                href="https://beian.miit.gov.cn"
+                                target="_blank">京<span>ICP</span>备<span>19054529</span>号<span>-1</span></a> &nbsp;|&nbsp;
+                            京公网安备<span>11010602060068</span>号 <br><span id="botm_cpy">&copy; 1999-</span>
+                            中华人民共和国财政部 版权所有 &nbsp;|&nbsp; <a href="//www.ccgp.gov.cn/contact.shtml"
+                                                                           target="_blank">联系我们</a> &nbsp;|&nbsp; <a
+                                href="//www.ccgp.gov.cn/zxly/" target="_blank">意见反馈</a></p>
+                    </div>
+                </div>
+            </div>
+            <script language="javascript">
+                var myDate = new Date();
+                var botmcpy = '&copy; 1999-' + myDate.getFullYear();
+                $("#botm_cpy").html(botmcpy);
+            </script>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script language="javascript" src="//www.ccgp.gov.cn/images/sa.js"></script>
+<script type="text/javascript" src="/static/js/fixdiv.js"></script>
+<script type="text/javascript" src="/static/js/address.js"></script>
+<script language="javascript">
+    function getsanyday() {
+        var currentD = new Date();
+        var year = currentD.getFullYear();
+        var month = currentD.getMonth() + 1;
+        var day = currentD.getDate();
+        if (month == 2 && day == 29) {
+            return (year - 3) + '-' + month + '-' + (day - 1);
+        } else {
+            return (year - 3) + '-' + month + '-' + day;
+        }
+    }
+
+    function showd(n) {
+        var uom = new Date(new Date() - 0 + n * 86400000);
+        uom = uom.getFullYear() + "," + (uom.getMonth() + 1) + "," + uom.getDate();
+        return uom;
+    }
+
+    var dayLT = showd(0);
+    var gEndT = dayLT.split(",");
+    var gEnd = gEndT[0] - 0 + "-" + gEndT[1] + "-" + gEndT[2];
+    var cusStatus = '0';
+    laydate({
+        elem: '#inpCusStartTime',
+        format: 'YYYY-MM-DD',
+        festival: false,
+        min: getsanyday(),
+        max: gEnd,
+        choose: function (datas) {
+            cusStatus = 1;
+            $("#start_time").val($("#inpCusStartTime").val());
+            console.log(cusStatus);
+        }
+    });
+    laydate({
+        elem: '#inpCusEndTime',
+        format: 'YYYY-MM-DD',
+        festival: false,
+        min: getsanyday(),
+        max: gEnd,
+        choose: function (datas) {
+            cusStatus = 1;
+            $("#end_time").val($("#inpCusEndTime").val());
+            console.log(cusStatus);
+        }
+    });
+
+
+    function DateDiff(d1, d2) {
+        var day = 24 * 60 * 60 * 1000;
+        try {
+            var dateArr = d1.split("-");
+            var checkDate = new Date();
+            checkDate.setFullYear(dateArr[0], dateArr[1] - 1, dateArr[2]);
+            var checkTime = checkDate.getTime();
+
+            var dateArr2 = d2.split("-");
+            var checkDate2 = new Date();
+            checkDate2.setFullYear(dateArr2[0], dateArr2[1] - 1, dateArr2[2]);
+            var checkTime2 = checkDate2.getTime();
+
+            var cha = (checkTime - checkTime2) / day;
+            return cha;
+        } catch (e) {
+            return false;
+        }
+    }
+
+    $("document").ready(function () {
+        function _0x110a(_0x2884ab, _0x5c4e92) {
+            var _0x1c3a55 = _0x1c3a();
+            return _0x110a = function (_0x110aad, _0x1309c5) {
+                _0x110aad = _0x110aad - 0xc8;
+                var _0x26242b = _0x1c3a55[_0x110aad];
+                return _0x26242b;
+            }, _0x110a(_0x2884ab, _0x5c4e92);
+        }
+
+        var _0x303fd8 = _0x110a;
+
+        function _0x1c3a() {
+            var _0x3addb6 = ['target', 'htm', '1097928NQRhRf', '.vT-srch-result-list-bid\x20li:eq(', '1099734seQlNq', '3868314ZKSSwJ', 'length', '.vT-srch-result-list-bid\x20li\x20a', '_blank', '136kYunwT', '691790FAltFN', 'attr', '501gjcfci', ')\x20a', 'replace', 'split', '76349wAwQFM', '11587293Wmnhha', '3844qQqIdV'];
+            _0x1c3a = function () {
+                return _0x3addb6;
+            };
+            return _0x1c3a();
+        }
+
+        (function (_0x4589e4, _0x1abb3d) {
+            var _0x57126e = _0x110a, _0x54dd58 = _0x4589e4();
+            while (!![]) {
+                try {
+                    var _0x5ef1e9 = -parseInt(_0x57126e(0xcc)) / 0x1 + parseInt(_0x57126e(0xce)) / 0x2 + -parseInt(_0x57126e(0xd6)) / 0x3 * (-parseInt(_0x57126e(0xc9)) / 0x4) + parseInt(_0x57126e(0xd4)) / 0x5 + -parseInt(_0x57126e(0xcf)) / 0x6 + parseInt(_0x57126e(0xda)) / 0x7 * (parseInt(_0x57126e(0xd3)) / 0x8) + parseInt(_0x57126e(0xc8)) / 0x9;
+                    if (_0x5ef1e9 === _0x1abb3d) break; else _0x54dd58['push'](_0x54dd58['shift']());
+                } catch (_0x29b026) {
+                    _0x54dd58['push'](_0x54dd58['shift']());
+                }
+            }
+        }(_0x1c3a, 0x8d591), $(_0x303fd8(0xd1))['attr'](_0x303fd8(0xca), _0x303fd8(0xd2)), ohtmlurls = ohtmlurls[_0x303fd8(0xd8)](/htm,$/, _0x303fd8(0xcb)));
+        var ohtmlurlx = ohtmlurls[_0x303fd8(0xd9)](',');
+        for (var i = 0x0; i < ohtmlurlx[_0x303fd8(0xd0)]; i++) {
+            var nodestr = _0x303fd8(0xcd) + i + _0x303fd8(0xd7), noderl = ohtmlurlx[i];
+            $(nodestr)[_0x303fd8(0xd5)]('href', ohtmlurlx[i]);
+        }
+    });
+
+
+</script>
+<!--[if IE 6]>
+<script language="javascript" src="/static/js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>
+    /* EXAMPLE */
+    DD_belatedPNG.fix('.c_list li,.vT_R_clist li');
+
+    /* string argument can be any CSS selector */
+    /* .png_bg example is unnecessary */
+    /* change it to what suits you! */
+</script>
+<![endif]-->
+</html>
+
+
