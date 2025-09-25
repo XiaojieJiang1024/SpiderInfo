@@ -4,7 +4,19 @@ import requests
 from write_file import WriteFile
 from .. import settings
 
-write_file = WriteFile.WriteInfo()
+from clear_data.Filter import FilterData
+
+
+class MyWriteInfo(WriteFile):
+    pass
+
+
+class MyFilterData(FilterData):
+    pass
+
+
+write_file = MyWriteInfo
+filter_data = MyFilterData
 
 
 class SpiderInfo:
@@ -23,32 +35,38 @@ class SpiderInfo:
     }
     params = {}
 
-    def __init__(self, url, file_name, file_path=settings.default_dir, multi_folders=None):
+    def __init__(self, url, file_name, file_type, is_multi=false, file_path=settings.default_dir):
         self.url = url
         self.file_name = file_name
         self.file_path = file_path
-        self.multi_folders = multi_folders
+        self.file_type = file_type
+        self.is_multi = is_multi
+        self.download()
 
-    def single_download(self):
-        res = requests.get(self.url, headers=self.headers, cookies=self.cookies)
-        print(res.text)
-
-    def multi_download(self):
-        save_dir = os.path.join(settings.default_dir, self.multi_folders)
-        print(save_dir)
-
-    def check_choices(self):
+    def check_choices(self, res):
         start_list = []
         for name in self.file_name:
             if not settings.support_dict[name]:
                 raise ValueError("不支持的类型")
             start_list.append(settings.support_dict[name])
-
+        obj = write_flie(res)
         for operation in start_list:
             getattr(write_file, operation)
 
     def download(self):
-        self.check_choices()
-        if self.multi_folders:
-            self.single_download()
-        self.multi_download()
+        if not is_multi:
+            res = self.single_download()
+        else:
+            res = self.multi_download()
+
+        self.check_choices(res)
+
+def single_download(self):
+    res = requests.get(self.url, headers=self.headers, cookies=self.cookies)
+    print(res.text)
+
+
+# 这个主要是递归下载，比方说有好几个章节，每个章节都对应了内容。
+def multi_download(self):
+    save_dir = os.path.join(settings.default_dir, self.multi_folders)
+    print(save_dir)
